@@ -113,4 +113,6 @@ docker rm d
 - docker build -t tag .  构建镜像，tag用于标示这个镜像，后面的 . 表示Dockerfile在当前目录，如果Dockerfile不在当前目录需要将Dockerfile的路径完整写上去
 - docker run -p 80:80 -d tag   运行这个容器，-p表示本地80端口映射到容器80端口以后面的端口运行， -d表示后台运行
 - docker stop/start/restart tag  表示停止，开启，重启容器
-- docker exec -it 665b4a1e17b6 /bin/sh 执行shell命令
+- docker exec -it containerID /bin/bash  进入容器内部 
+- docker logs -f container-name 显示该容器所有命令
+- docker logs -n 10 container-name 显示最近10行日志

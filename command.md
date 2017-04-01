@@ -111,6 +111,6 @@ docker rm d
 就可以了，因为因为开头为d的只有那么一个，所以docker可以找到，所有操作都可以这样做，只要你给的标识唯一的话，docker就可以进行操作
 
 - docker build -t tag .  构建镜像，tag用于标示这个镜像，后面的 . 表示Dockerfile在当前目录，如果Dockerfile不在当前目录需要将Dockerfile的路径完整写上去
-- docker run -p 80:80 -d tag   运行这个容器，-p表示以后面的端口运行， -d表示后台运行
+- docker run -p 80:80 -d tag   运行这个容器，-p表示本地80端口映射到容器80端口以后面的端口运行， -d表示后台运行
 - docker stop/start/restart tag  表示停止，开启，重启容器
 - docker exec -it 665b4a1e17b6 /bin/sh 执行shell命令

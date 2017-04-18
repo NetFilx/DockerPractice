@@ -9,5 +9,5 @@
 
 [Docker常用命令](https://netfilx.github.io/DockerPractice/command)
 
-[Docker常见问题](https://netfilx.github.io/DockerPractice/problem)
+[Docker常见问题](https://netfilx.github.io/DockerPractice/problems)
 
